@@ -7,6 +7,8 @@ target 'Shiro' do
 
   # Pods for Shiro
   pod 'SwiftLint'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 
   target 'ShiroTests' do
     inherit! :search_paths
