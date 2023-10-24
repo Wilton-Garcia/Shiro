@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0C6DCE3BD77C5061D9F007 /* Pods_Shiro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B582F0968611BC25B7B1C59 /* Pods_Shiro.framework */; };
+		77CEE02171E21F2A65720791 /* Pods_Shiro_ShiroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A8329FCE40B9820EED8A93 /* Pods_Shiro_ShiroUITests.framework */; };
+		95CF54EC5481399C66AC8C5E /* Pods_ShiroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB595802CC6E18F5E88452D5 /* Pods_ShiroTests.framework */; };
 		B874F5602AE7E7BE00CFC0D3 /* ShiroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B874F55F2AE7E7BE00CFC0D3 /* ShiroApp.swift */; };
 		B874F5622AE7E7BE00CFC0D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B874F5612AE7E7BE00CFC0D3 /* ContentView.swift */; };
 		B874F5642AE7E7C000CFC0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B874F5632AE7E7C000CFC0D3 /* Assets.xcassets */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02CA3955450E4C1AE0A6E5EA /* Pods-Shiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiro.release.xcconfig"; path = "Target Support Files/Pods-Shiro/Pods-Shiro.release.xcconfig"; sourceTree = "<group>"; };
+		2461FF9D80370492C1D8384A /* Pods-Shiro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiro.debug.xcconfig"; path = "Target Support Files/Pods-Shiro/Pods-Shiro.debug.xcconfig"; sourceTree = "<group>"; };
+		2A9E6655C53799A675A7AB6E /* Pods-Shiro-ShiroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiro-ShiroUITests.debug.xcconfig"; path = "Target Support Files/Pods-Shiro-ShiroUITests/Pods-Shiro-ShiroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B582F0968611BC25B7B1C59 /* Pods_Shiro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD656B06A4BF60B8D696C85 /* Pods-ShiroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiroTests.debug.xcconfig"; path = "Target Support Files/Pods-ShiroTests/Pods-ShiroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5A8329FCE40B9820EED8A93 /* Pods_Shiro_ShiroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiro_ShiroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B874F55C2AE7E7BE00CFC0D3 /* Shiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B874F55F2AE7E7BE00CFC0D3 /* ShiroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroApp.swift; sourceTree = "<group>"; };
 		B874F5612AE7E7BE00CFC0D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,9 @@
 		B874F5762AE7E7C100CFC0D3 /* ShiroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B874F57A2AE7E7C100CFC0D3 /* ShiroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroUITests.swift; sourceTree = "<group>"; };
 		B874F57C2AE7E7C100CFC0D3 /* ShiroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0910EE92EB7B6CAA7FD7AFB /* Pods-ShiroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiroTests.release.xcconfig"; path = "Target Support Files/Pods-ShiroTests/Pods-ShiroTests.release.xcconfig"; sourceTree = "<group>"; };
+		F67D02EDB36B8AA5B4446E81 /* Pods-Shiro-ShiroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiro-ShiroUITests.release.xcconfig"; path = "Target Support Files/Pods-Shiro-ShiroUITests/Pods-Shiro-ShiroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB595802CC6E18F5E88452D5 /* Pods_ShiroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShiroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0C6DCE3BD77C5061D9F007 /* Pods_Shiro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CF54EC5481399C66AC8C5E /* Pods_ShiroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +79,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CEE02171E21F2A65720791 /* Pods_Shiro_ShiroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42C251BADD29AA510EEEB4FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2461FF9D80370492C1D8384A /* Pods-Shiro.debug.xcconfig */,
+				02CA3955450E4C1AE0A6E5EA /* Pods-Shiro.release.xcconfig */,
+				2A9E6655C53799A675A7AB6E /* Pods-Shiro-ShiroUITests.debug.xcconfig */,
+				F67D02EDB36B8AA5B4446E81 /* Pods-Shiro-ShiroUITests.release.xcconfig */,
+				9FD656B06A4BF60B8D696C85 /* Pods-ShiroTests.debug.xcconfig */,
+				C0910EE92EB7B6CAA7FD7AFB /* Pods-ShiroTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B874F5532AE7E7BE00CFC0D3 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +106,8 @@
 				B874F56F2AE7E7C100CFC0D3 /* ShiroTests */,
 				B874F5792AE7E7C100CFC0D3 /* ShiroUITests */,
 				B874F55D2AE7E7BE00CFC0D3 /* Products */,
+				42C251BADD29AA510EEEB4FF /* Pods */,
+				D62B82576AEB074DE5B8E0C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +157,16 @@
 			path = ShiroUITests;
 			sourceTree = "<group>";
 		};
+		D62B82576AEB074DE5B8E0C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B582F0968611BC25B7B1C59 /* Pods_Shiro.framework */,
+				B5A8329FCE40B9820EED8A93 /* Pods_Shiro_ShiroUITests.framework */,
+				FB595802CC6E18F5E88452D5 /* Pods_ShiroTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B874F5802AE7E7C100CFC0D3 /* Build configuration list for PBXNativeTarget "Shiro" */;
 			buildPhases = (
+				6E9B9AD2648A89C87D2C0E98 /* [CP] Check Pods Manifest.lock */,
 				B874F5582AE7E7BE00CFC0D3 /* Sources */,
 				B874F5592AE7E7BE00CFC0D3 /* Frameworks */,
 				B874F55A2AE7E7BE00CFC0D3 /* Resources */,
+				B85D2C012AE8517C0055C0A0 /* Run Lint */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B874F5832AE7E7C100CFC0D3 /* Build configuration list for PBXNativeTarget "ShiroTests" */;
 			buildPhases = (
+				F9C19A376AE37ECFE2521755 /* [CP] Check Pods Manifest.lock */,
 				B874F5682AE7E7C100CFC0D3 /* Sources */,
 				B874F5692AE7E7C100CFC0D3 /* Frameworks */,
 				B874F56A2AE7E7C100CFC0D3 /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B874F5862AE7E7C100CFC0D3 /* Build configuration list for PBXNativeTarget "ShiroUITests" */;
 			buildPhases = (
+				52447E94F0D92970AE5A0DD4 /* [CP] Check Pods Manifest.lock */,
 				B874F5722AE7E7C100CFC0D3 /* Sources */,
 				B874F5732AE7E7C100CFC0D3 /* Frameworks */,
 				B874F5742AE7E7C100CFC0D3 /* Resources */,
@@ -252,6 +296,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52447E94F0D92970AE5A0DD4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shiro-ShiroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E9B9AD2648A89C87D2C0E98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shiro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B85D2C012AE8517C0055C0A0 /* Run Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		F9C19A376AE37ECFE2521755 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShiroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B874F5582AE7E7BE00CFC0D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -330,9 +461,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -393,9 +525,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,6 +549,7 @@
 		};
 		B874F5812AE7E7C100CFC0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2461FF9D80370492C1D8384A /* Pods-Shiro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -423,7 +557,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shiro/Preview Content\"";
 				DEVELOPMENT_TEAM = CWDH6S87LF;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -448,6 +584,7 @@
 		};
 		B874F5822AE7E7C100CFC0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02CA3955450E4C1AE0A6E5EA /* Pods-Shiro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,7 +592,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shiro/Preview Content\"";
 				DEVELOPMENT_TEAM = CWDH6S87LF;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -480,6 +619,7 @@
 		};
 		B874F5842AE7E7C100CFC0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD656B06A4BF60B8D696C85 /* Pods-ShiroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +640,7 @@
 		};
 		B874F5852AE7E7C100CFC0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0910EE92EB7B6CAA7FD7AFB /* Pods-ShiroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +661,7 @@
 		};
 		B874F5872AE7E7C100CFC0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9E6655C53799A675A7AB6E /* Pods-Shiro-ShiroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +680,7 @@
 		};
 		B874F5882AE7E7C100CFC0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67D02EDB36B8AA5B4446E81 /* Pods-Shiro-ShiroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

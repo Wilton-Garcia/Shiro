@@ -6,6 +6,7 @@ target 'Shiro' do
   use_frameworks!
 
   # Pods for Shiro
+  pod 'SwiftLint'
 
   target 'ShiroTests' do
     inherit! :search_paths
