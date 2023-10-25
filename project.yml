@@ -1,0 +1,14 @@
+name: Shiro
+options:
+  bundleIdPrefix: com.wilton-garcia
+  deploymentTarget: '16.4'
+  organizationName: wilton-garcia
+targets:
+  Shiro:
+    type: application
+    platform: iOS
+    deploymentTarget: '16.04'
+    sources: Shiro
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.wilton-garcia.Shiro
+      SWIFT_VERSION: '5.5'
