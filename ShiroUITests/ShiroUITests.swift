@@ -5,9 +5,6 @@
 //  Created by Wilton Garcia on 24/10/23.
 //
 
-
-
-/*
 import XCTest
 
 final class ShiroUITests: XCTestCase {
@@ -42,4 +39,3 @@ final class ShiroUITests: XCTestCase {
         }
     }
 }
-*/

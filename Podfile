@@ -1,7 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-
-workspace 'Shiro.xcworkspace'
-project 'Shiro.xcodeproj'
+# platform :ios, '9.0'
 
 target 'Shiro' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -11,5 +9,14 @@ target 'Shiro' do
   pod 'SwiftLint'
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
+
+  target 'ShiroTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ShiroUITests' do
+    # Pods for testing
+  end
 
 end
