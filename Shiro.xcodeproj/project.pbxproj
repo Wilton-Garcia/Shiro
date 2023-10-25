@@ -10,6 +10,8 @@
 		2B0C6DCE3BD77C5061D9F007 /* Pods_Shiro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B582F0968611BC25B7B1C59 /* Pods_Shiro.framework */; };
 		77CEE02171E21F2A65720791 /* Pods_Shiro_ShiroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A8329FCE40B9820EED8A93 /* Pods_Shiro_ShiroUITests.framework */; };
 		95CF54EC5481399C66AC8C5E /* Pods_ShiroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB595802CC6E18F5E88452D5 /* Pods_ShiroTests.framework */; };
+		B85D2C042AE8B5E90055C0A0 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B85D2C022AE8ADD80055C0A0 /* Secrets.xcconfig */; };
+		B85D2C062AE8B7F80055C0A0 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B85D2C052AE8B7F80055C0A0 /* Secrets.xcconfig */; };
 		B874F5602AE7E7BE00CFC0D3 /* ShiroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B874F55F2AE7E7BE00CFC0D3 /* ShiroApp.swift */; };
 		B874F5622AE7E7BE00CFC0D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B874F5612AE7E7BE00CFC0D3 /* ContentView.swift */; };
 		B874F5642AE7E7C000CFC0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B874F5632AE7E7C000CFC0D3 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		4B582F0968611BC25B7B1C59 /* Pods_Shiro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD656B06A4BF60B8D696C85 /* Pods-ShiroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShiroTests.debug.xcconfig"; path = "Target Support Files/Pods-ShiroTests/Pods-ShiroTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A8329FCE40B9820EED8A93 /* Pods_Shiro_ShiroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiro_ShiroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85D2C022AE8ADD80055C0A0 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		B85D2C052AE8B7F80055C0A0 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = Helpers/Secrets.xcconfig; sourceTree = "<group>"; };
 		B874F55C2AE7E7BE00CFC0D3 /* Shiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B874F55F2AE7E7BE00CFC0D3 /* ShiroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroApp.swift; sourceTree = "<group>"; };
 		B874F5612AE7E7BE00CFC0D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,9 +103,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B85D2C032AE8AE770055C0A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B85D2C022AE8ADD80055C0A0 /* Secrets.xcconfig */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B874F5532AE7E7BE00CFC0D3 = {
 			isa = PBXGroup;
 			children = (
+				B85D2C052AE8B7F80055C0A0 /* Secrets.xcconfig */,
+				B85D2C032AE8AE770055C0A0 /* Helpers */,
 				B874F55E2AE7E7BE00CFC0D3 /* Shiro */,
 				B874F56F2AE7E7C100CFC0D3 /* ShiroTests */,
 				B874F5792AE7E7C100CFC0D3 /* ShiroUITests */,
@@ -277,8 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B85D2C062AE8B7F80055C0A0 /* Secrets.xcconfig in Resources */,
 				B874F5672AE7E7C000CFC0D3 /* Preview Assets.xcassets in Resources */,
 				B874F5642AE7E7C000CFC0D3 /* Assets.xcassets in Resources */,
+				B85D2C042AE8B5E90055C0A0 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +480,7 @@
 /* Begin XCBuildConfiguration section */
 		B874F57E2AE7E7C100CFC0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85D2C052AE8B7F80055C0A0 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -515,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -528,6 +545,7 @@
 		};
 		B874F57F2AE7E7C100CFC0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B85D2C052AE8B7F80055C0A0 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -573,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
