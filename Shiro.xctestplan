@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "76DD10C7-B959-41DD-96E6-87A52BAE2331",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Shiro.xcodeproj",
+      "identifier" : "75B40B6D280F7EA9091A0C66",
+      "name" : "Shiro"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
