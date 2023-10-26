@@ -13,13 +13,4 @@ target 'Shiro' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
 
-  target 'ShiroTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'ShiroUITests' do
-    # Pods for testing
-  end
-
 end
