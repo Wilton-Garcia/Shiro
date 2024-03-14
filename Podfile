@@ -6,6 +6,9 @@ target 'Shiro' do
   use_frameworks!
 
   # Pods for Shiro
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
 
   target 'ShiroTests' do
     inherit! :search_paths

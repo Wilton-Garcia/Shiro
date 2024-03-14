@@ -42,6 +42,8 @@ playground.xcworkspace
 Packages/
 Package.pins
 Package.resolved
+Pods/
+Podfile.lock
 # *.xcodeproj
 #
 # Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
