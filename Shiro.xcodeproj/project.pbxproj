@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D55678A6F08E5195D4A6011 /* Pods_Shiro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA65D827EBCBB2FCB53E910 /* Pods_Shiro.framework */; };
 		AE61B3162F5BE158D5A660E9 /* Pods_ShiroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CAE0898EC35727F95A80D8 /* Pods_ShiroTests.framework */; };
+		B8722DE12BA3ACFE009431A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8722DE02BA3ACFE009431A7 /* GoogleService-Info.plist */; };
 		B8D9077E2BA0DF98004F5CF2 /* ShiroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D9077D2BA0DF98004F5CF2 /* ShiroApp.swift */; };
 		B8D907802BA0DF98004F5CF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D9077F2BA0DF98004F5CF2 /* ContentView.swift */; };
 		B8D907822BA0DF9A004F5CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D907812BA0DF9A004F5CF2 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		7E8C76BC030B4F36836C7A0E /* Pods-Shiro-ShiroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiro-ShiroUITests.debug.xcconfig"; path = "Target Support Files/Pods-Shiro-ShiroUITests/Pods-Shiro-ShiroUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A60E6009486E56AA46B92BE7 /* Pods-Shiro-ShiroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiro-ShiroUITests.release.xcconfig"; path = "Target Support Files/Pods-Shiro-ShiroUITests/Pods-Shiro-ShiroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B53422FB2E9FD8BF03659539 /* Pods-Shiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiro.release.xcconfig"; path = "Target Support Files/Pods-Shiro/Pods-Shiro.release.xcconfig"; sourceTree = "<group>"; };
+		B8722DE02BA3ACFE009431A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8D9077A2BA0DF98004F5CF2 /* Shiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D9077D2BA0DF98004F5CF2 /* ShiroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroApp.swift; sourceTree = "<group>"; };
 		B8D9077F2BA0DF98004F5CF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		B8D907712BA0DF98004F5CF2 = {
 			isa = PBXGroup;
 			children = (
+				B8722DE02BA3ACFE009431A7 /* GoogleService-Info.plist */,
 				B8D9077C2BA0DF98004F5CF2 /* Shiro */,
 				B8D9078D2BA0DF9A004F5CF2 /* ShiroTests */,
 				B8D907972BA0DF9A004F5CF2 /* ShiroUITests */,
@@ -278,6 +281,7 @@
 			files = (
 				B8D907852BA0DF9A004F5CF2 /* Preview Assets.xcassets in Resources */,
 				B8D907822BA0DF9A004F5CF2 /* Assets.xcassets in Resources */,
+				B8722DE12BA3ACFE009431A7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +484,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -543,7 +547,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
