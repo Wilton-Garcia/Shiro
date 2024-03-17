@@ -17,7 +17,6 @@ target 'Shiro' do
   end
 
   target 'ShiroUITests' do
-    inherit! :search_paths
     # Pods for testing
   end
 
