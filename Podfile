@@ -6,6 +6,7 @@ target 'Shiro' do
   use_frameworks!
 
   # Pods for Shiro
+  pod 'Firebase'
   pod 'FirebaseAnalytics'
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
