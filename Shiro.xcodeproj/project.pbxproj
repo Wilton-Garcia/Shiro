@@ -14,8 +14,6 @@
 		B8D907822BA0DF9A004F5CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D907812BA0DF9A004F5CF2 /* Assets.xcassets */; };
 		B8D907852BA0DF9A004F5CF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D907842BA0DF9A004F5CF2 /* Preview Assets.xcassets */; };
 		B8D9078F2BA0DF9A004F5CF2 /* ShiroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D9078E2BA0DF9A004F5CF2 /* ShiroTests.swift */; };
-		B8D907992BA0DF9A004F5CF2 /* ShiroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D907982BA0DF9A004F5CF2 /* ShiroUITests.swift */; };
-		B8D9079B2BA0DF9A004F5CF2 /* ShiroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D9079A2BA0DF9A004F5CF2 /* ShiroUITestsLaunchTests.swift */; };
 		B8EE87DB2D63E166000A9921 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EE87DA2D63E15B000A9921 /* Profile.swift */; };
 		B8EE87DE2D63E22C000A9921 /* ProfileUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EE87DD2D63E221000A9921 /* ProfileUseCaseImpl.swift */; };
 		B8EE87E12D63E25C000A9921 /* ProfileDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EE87E02D63E256000A9921 /* ProfileDataManagerTests.swift */; };
@@ -24,18 +22,10 @@
 		B8EE87E92D63E4A6000A9921 /* ProfileDataManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EE87E82D63E49A000A9921 /* ProfileDataManagerImpl.swift */; };
 		B8EE87EB2D63FA37000A9921 /* ProfileUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EE87EA2D63FA2D000A9921 /* ProfileUseCaseTests.swift */; };
 		B8EE87ED2D63FA56000A9921 /* DataManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EE87EC2D63FA4F000A9921 /* DataManagerMock.swift */; };
-		C6DAF68FEC4D784CD8B8E90E /* Pods_Shiro_ShiroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFCB6A31C164D03DB7156A6 /* Pods_Shiro_ShiroUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B8D9078B2BA0DF9A004F5CF2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8D907722BA0DF98004F5CF2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8D907792BA0DF98004F5CF2;
-			remoteInfo = Shiro;
-		};
-		B8D907952BA0DF9A004F5CF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B8D907722BA0DF98004F5CF2 /* Project object */;
 			proxyType = 1;
@@ -59,9 +49,6 @@
 		B8D907842BA0DF9A004F5CF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8D9078A2BA0DF9A004F5CF2 /* ShiroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D9078E2BA0DF9A004F5CF2 /* ShiroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroTests.swift; sourceTree = "<group>"; };
-		B8D907942BA0DF9A004F5CF2 /* ShiroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8D907982BA0DF9A004F5CF2 /* ShiroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroUITests.swift; sourceTree = "<group>"; };
-		B8D9079A2BA0DF9A004F5CF2 /* ShiroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiroUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B8EE87DA2D63E15B000A9921 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		B8EE87DD2D63E221000A9921 /* ProfileUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUseCaseImpl.swift; sourceTree = "<group>"; };
 		B8EE87E02D63E256000A9921 /* ProfileDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManagerTests.swift; sourceTree = "<group>"; };
@@ -91,14 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8D907912BA0DF9A004F5CF2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C6DAF68FEC4D784CD8B8E90E /* Pods_Shiro_ShiroUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,7 +86,6 @@
 			children = (
 				B8D9077C2BA0DF98004F5CF2 /* Shiro */,
 				B8D9078D2BA0DF9A004F5CF2 /* ShiroTests */,
-				B8D907972BA0DF9A004F5CF2 /* ShiroUITests */,
 				B8D9077B2BA0DF98004F5CF2 /* Products */,
 				F33E0BEE5B219E0F33390678 /* Pods */,
 				F7E663DB3E660EE348FF8712 /* Frameworks */,
@@ -119,7 +97,6 @@
 			children = (
 				B8D9077A2BA0DF98004F5CF2 /* Shiro.app */,
 				B8D9078A2BA0DF9A004F5CF2 /* ShiroTests.xctest */,
-				B8D907942BA0DF9A004F5CF2 /* ShiroUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,15 +128,6 @@
 				B8D9078E2BA0DF9A004F5CF2 /* ShiroTests.swift */,
 			);
 			path = ShiroTests;
-			sourceTree = "<group>";
-		};
-		B8D907972BA0DF9A004F5CF2 /* ShiroUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B8D907982BA0DF9A004F5CF2 /* ShiroUITests.swift */,
-				B8D9079A2BA0DF9A004F5CF2 /* ShiroUITestsLaunchTests.swift */,
-			);
-			path = ShiroUITests;
 			sourceTree = "<group>";
 		};
 		B8EE87D82D63E132000A9921 /* Profile */ = {
@@ -279,25 +247,6 @@
 			productReference = B8D9078A2BA0DF9A004F5CF2 /* ShiroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B8D907932BA0DF9A004F5CF2 /* ShiroUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8D907A42BA0DF9A004F5CF2 /* Build configuration list for PBXNativeTarget "ShiroUITests" */;
-			buildPhases = (
-				5EE7569ACF521D80A87BD85B /* [CP] Check Pods Manifest.lock */,
-				B8D907902BA0DF9A004F5CF2 /* Sources */,
-				B8D907912BA0DF9A004F5CF2 /* Frameworks */,
-				B8D907922BA0DF9A004F5CF2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8D907962BA0DF9A004F5CF2 /* PBXTargetDependency */,
-			);
-			name = ShiroUITests;
-			productName = ShiroUITests;
-			productReference = B8D907942BA0DF9A004F5CF2 /* ShiroUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -312,10 +261,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					B8D907892BA0DF9A004F5CF2 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = B8D907792BA0DF98004F5CF2;
-					};
-					B8D907932BA0DF9A004F5CF2 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = B8D907792BA0DF98004F5CF2;
 					};
@@ -336,7 +281,6 @@
 			targets = (
 				B8D907792BA0DF98004F5CF2 /* Shiro */,
 				B8D907892BA0DF9A004F5CF2 /* ShiroTests */,
-				B8D907932BA0DF9A004F5CF2 /* ShiroUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,13 +296,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B8D907882BA0DF9A004F5CF2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8D907922BA0DF9A004F5CF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,28 +321,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ShiroTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5EE7569ACF521D80A87BD85B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Shiro-ShiroUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,15 +377,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8D907902BA0DF9A004F5CF2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8D9079B2BA0DF9A004F5CF2 /* ShiroUITestsLaunchTests.swift in Sources */,
-				B8D907992BA0DF9A004F5CF2 /* ShiroUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -478,11 +384,6 @@
 			isa = PBXTargetDependency;
 			target = B8D907792BA0DF98004F5CF2 /* Shiro */;
 			targetProxy = B8D9078B2BA0DF9A004F5CF2 /* PBXContainerItemProxy */;
-		};
-		B8D907962BA0DF9A004F5CF2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8D907792BA0DF98004F5CF2 /* Shiro */;
-			targetProxy = B8D907952BA0DF9A004F5CF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -680,7 +581,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5932269134C484DCF85A7167 /* Pods-ShiroTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -705,7 +605,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F79540967CFD884B966BFFD1 /* Pods-ShiroTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -723,54 +622,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shiro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shiro";
-			};
-			name = Release;
-		};
-		B8D907A52BA0DF9A004F5CF2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E8C76BC030B4F36836C7A0E /* Pods-Shiro-ShiroUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CWDH6S87LF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Wilton-Garcia.ShiroUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = Shiro;
-			};
-			name = Debug;
-		};
-		B8D907A62BA0DF9A004F5CF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A60E6009486E56AA46B92BE7 /* Pods-Shiro-ShiroUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CWDH6S87LF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Wilton-Garcia.ShiroUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = Shiro;
 			};
 			name = Release;
 		};
@@ -800,15 +651,6 @@
 			buildConfigurations = (
 				B8D907A22BA0DF9A004F5CF2 /* Debug */,
 				B8D907A32BA0DF9A004F5CF2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8D907A42BA0DF9A004F5CF2 /* Build configuration list for PBXNativeTarget "ShiroUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8D907A52BA0DF9A004F5CF2 /* Debug */,
-				B8D907A62BA0DF9A004F5CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
