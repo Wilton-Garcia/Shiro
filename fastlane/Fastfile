@@ -20,14 +20,14 @@ platform :ios do
     run_tests(
       scheme: "Shiro",
       code_coverage: true,
-      output_directory: "./fastlane/test_output",
+      output_directory: "./fastlane/artefacts",
       result_bundle: true,
-      result_bundle_path: "./fastlane/test_output/Shiro.xcresult"
+      result_bundle_path: "./fastlane/artefacts/Shiro.xcresult"
     )
-    
+ 
     xcov(
       scheme: "Shiro",
-      output_directory: "./fastlane/coverage_report"
+      output_directory: "./fastlane/artefacts"
     )
   end
 end

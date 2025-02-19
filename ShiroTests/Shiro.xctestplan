@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "AC722506-C70C-4A01-B842-5DF1758FA0B2",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:Shiro.xcodeproj",
+        "identifier" : "B8D907892BA0DF9A004F5CF2",
+        "name" : "ShiroTests"
+      }
+    }
+  ],
+  "version" : 1
+}
