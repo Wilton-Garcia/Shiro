@@ -50,8 +50,6 @@ platform :ios do
     coverage_percentage = coverage_json.dig("coverage") || "Não disponível"
     comment = "✅ Cobertura de código: #{coverage_percentage}%"
     
-   
-    
     if BITRISE_REPO_NAME.nil?
       UI.user_error!("O parâmetro BITRISE_REPO_NAME é obrigatório")
     end
