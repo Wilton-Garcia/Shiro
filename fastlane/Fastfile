@@ -13,23 +13,75 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-default_platform(:ios)
+require_relative '../fastlane/comment_on_pull_request'
+
+REPORTS_DIR = "./build/reports"
+BUILD_OUTPUT_NAME = "Shiro"
+
+GIT_TOKEN = ENV['GIT_TOKEN']
+BITRISE_PR_NUMBER = ENV['BITRISE_PULL_REQUEST']
+BITRISE_REPO_NAME = ENV['GIT_REPOSITORY_URL']
 
 platform :ios do
-  lane :tests do
+  desc "Execute unit tests"
+  private_lane :tests do |options| 
+
+    
     run_tests(
       scheme: "Shiro",
       code_coverage: true,
-      output_directory: "./fastlane/artefacts",
+      output_directory: "#{REPORTS_DIR}/tests",
+      output_types: "html,junit",
+      reset_simulator: true,
       result_bundle: true,
-      result_bundle_path: "./fastlane/artefacts/Shiro.xcresult"
+      result_bundle_path: "#{REPORTS_DIR}/tests/Shiro.xcresult"
+      
     )
- 
+  end
+
+  desc "Get code coverage"
+  private_lane :do_coverage do |options|
     xcov(
       scheme: "Shiro",
-      output_directory: "./fastlane/artefacts"
+      html_report: true,
+      json_report: true,
+      output_directory: "#{REPORTS_DIR}/coverage"
+    )
+  end
+
+  desc "Adiciona um comentário a um Pull Request no GitHub com a porcentagem de cobertura de código"
+  lane :comment_on_pr do
+  
+
+    sh "rm -rf ./build"
+    sleep(1)
+    sh "rm -rf #{REPORTS_DIR}/tests/* #{REPORTS_DIR}/coverage/*"
+    sleep(1)
+
+    tests
+    do_coverage
+
+    
+    coverage_json_path = "#{REPORTS_DIR}/coverage/report.json"
+    puts "Verificando: #{coverage_json_path}"
+    unless File.exist?(coverage_json_path)
+      UI.user_error!("Relatório de cobertura não encontrado em #{coverage_json_path}")
+    end
+
+    coverage_json = JSON.parse(File.read(coverage_json_path))
+    coverage_percentage = coverage_json.dig("coverage") || "Não disponível"
+
+    comment = "✅ Cobertura de código: #{coverage_percentage}%"
+
+    if [GIT_TOKEN, BITRISE_REPO_NAME, BITRISE_PR_NUMBER].any?(&:nil?)
+      UI.user_error!("Todos os parâmetros (GIT_TOKEN, BITRISE_REPO_NAME, BITRISE_PR_NUMBER) são obrigatórios")
+    end
+
+    comment_on_pull_request(
+      github_token: GIT_TOKEN,
+      repo: BITRISE_REPO_NAME,
+      pr_number: BITRISE_PR_NUMBER,
+      comment: comment
     )
   end
 end
-
-
