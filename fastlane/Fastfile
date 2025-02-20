@@ -13,8 +13,6 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-require_relative '../fastlane/comment_on_pull_request'
-
 REPORTS_DIR = "./build/reports"
 BUILD_OUTPUT_NAME = "Shiro"
 
@@ -52,7 +50,6 @@ platform :ios do
   desc "Adiciona um comentário a um Pull Request no GitHub com a porcentagem de cobertura de código"
   lane :comment_on_pr do
   
-
     sh "rm -rf ./build"
     sleep(1)
     sh "rm -rf #{REPORTS_DIR}/tests/* #{REPORTS_DIR}/coverage/*"
@@ -76,12 +73,15 @@ platform :ios do
     if [GIT_TOKEN, BITRISE_REPO_NAME, BITRISE_PR_NUMBER].any?(&:nil?)
       UI.user_error!("Todos os parâmetros (GIT_TOKEN, BITRISE_REPO_NAME, BITRISE_PR_NUMBER) são obrigatórios")
     end
-
-    comment_on_pull_request(
-      github_token: GIT_TOKEN,
-      repo: BITRISE_REPO_NAME,
-      pr_number: BITRISE_PR_NUMBER,
-      comment: comment
-    )
+    begin
+      comment_on_pull_request(
+        github_token: GIT_TOKEN,
+        repo: BITRISE_REPO_NAME,
+        pr_number: BITRISE_PR_NUMBER,
+        comment: comment
+      )
+      rescue => ex
+        UI.error
+      end
   end
 end
