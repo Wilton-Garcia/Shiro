@@ -67,6 +67,11 @@ platform :ios do
       UI.user_error!("O parâmetro GIT_TOKEN é obrigatório")
     end
 
+    BITRISE_REPO_NAME = BITRISE_REPO_NAME
+    .sub("git@github.com:", "") # Remove o prefixo da URL
+    .sub(".git", "")            # Remove o sufixo ".git"
+    puts "================> Repositório formatado: #{repo_name}"
+
     comment_on_pull_request(
       github_token: GIT_TOKEN,
       repo: BITRISE_REPO_NAME,
