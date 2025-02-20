@@ -28,11 +28,11 @@ platform :ios do
     run_tests(
       scheme: "Shiro",
       code_coverage: true,
-      output_directory: "#{REPORTS_DIR}/tests",
+      output_directory: "./build/reports/tests",
       output_types: "html,junit",
       reset_simulator: true,
       result_bundle: true,
-      result_bundle_path: "#{REPORTS_DIR}/tests/Shiro.xcresult"
+      result_bundle_path: "./build/reports/tests/Shiro.xcresult"
       
     )
   end
@@ -43,24 +43,26 @@ platform :ios do
       scheme: "Shiro",
       html_report: true,
       json_report: true,
-      output_directory: "#{REPORTS_DIR}/coverage"
+      output_directory: "./build/reports/coverage"
     )
   end
 
   desc "Adiciona um comentário a um Pull Request no GitHub com a porcentagem de cobertura de código"
   lane :comment_on_pr do
   
-    sh "rm -rf ./build"
+    sh "rm -rf ../build"
     sleep(1)
-    sh "rm -rf #{REPORTS_DIR}/tests/* #{REPORTS_DIR}/coverage/*"
+    sh "rm -rf #../build/reports/tests/* ../build/reports/coverage/*"
     sleep(1)
 
     tests
     do_coverage
 
+    puts "==============================================================="
+    puts "================> Diretório atual: #{Dir.pwd}"
+    coverage_json_path = File.expand_path("../build/reports/coverage/report.json")
+    puts "================> Verificando: #{coverage_json_path}"
     
-    coverage_json_path = "#{REPORTS_DIR}/coverage/report.json"
-    puts "Verificando: #{coverage_json_path}"
     unless File.exist?(coverage_json_path)
       UI.user_error!("Relatório de cobertura não encontrado em #{coverage_json_path}")
     end
@@ -80,8 +82,7 @@ platform :ios do
         pr_number: BITRISE_PR_NUMBER,
         comment: comment
       )
-      rescue => ex
-        UI.error
+
       end
   end
 end
