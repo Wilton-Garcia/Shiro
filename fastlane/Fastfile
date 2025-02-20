@@ -54,10 +54,13 @@ platform :ios do
     
     if BITRISE_REPO_NAME.nil?
       UI.user_error!("O parâmetro BITRISE_REPO_NAME é obrigatório")
+    else
+      puts "BITRISE_REPO_NAME: #{BITRISE_REPO_NAME}"
     end
-    
     if BITRISE_PR_NUMBER.nil?
       UI.user_error!("O parâmetro BITRISE_PR_NUMBER é obrigatório")
+    else
+      puts "BITRISE_PR_NUMBER: #{BITRISE_PR_NUMBER}"
     end
     
     if GIT_TOKEN.nil?
