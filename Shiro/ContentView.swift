@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             Text("Shiro App")
             Text("Developer by: Wilton Garcia")
-            Text("V:0.0.01")
+            Text("V:0.0.02")
         }
         .padding()
     }
