@@ -1,35 +1,74 @@
 # This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
+# Documentation: https://docs.fastlane.tools
+# Actions: https://docs.fastlane.tools/actions
+# Plugins: https://docs.fastlane.tools/plugins/available-plugins
 
-# Uncomment the line if you want fastlane to automatically update itself
+# Uncomment to enable automatic Fastlane updates
 # update_fastlane
 
-default_platform(:ios)
+BUILD_OUTPUT_NAME = "Shiro"
+GIT_TOKEN = ENV['GIT_TOKEN']
+BITRISE_PR_NUMBER = ENV['BITRISE_PULL_REQUEST']
+BITRISE_REPO_NAME = ENV['GIT_REPOSITORY_URL']
 
 platform :ios do
-  lane :tests do
+  desc "Execute unit tests"
+  private_lane :tests do |options|
     run_tests(
       scheme: "Shiro",
       code_coverage: true,
-      output_directory: "./fastlane/artefacts",
+      output_directory: "./build/reports/tests",
+      output_types: "html,junit",
+      reset_simulator: true,
       result_bundle: true,
-      result_bundle_path: "./fastlane/artefacts/Shiro.xcresult"
+      result_bundle_path: "./build/reports/tests/Shiro.xcresult"
     )
- 
+  end
+
+  desc "Get code coverage"
+  private_lane :do_coverage do |options|
     xcov(
       scheme: "Shiro",
-      output_directory: "./fastlane/artefacts"
+      html_report: true,
+      json_report: true,
+      output_directory: "./build/reports/coverage"
+    )
+  end
+
+  desc "Adiciona um comentário a um Pull Request no GitHub com a porcentagem de cobertura de código"
+  lane :comment_on_pr do
+    sh "rm -rf ../build"
+    tests
+    do_coverage
+    coverage_json_path = File.expand_path("../build/reports/coverage/report.json")
+    
+    unless File.exist?(coverage_json_path)
+      UI.user_error!("Relatório de cobertura não encontrado em #{coverage_json_path}")
+    end
+    
+    coverage_json = JSON.parse(File.read(coverage_json_path))
+    coverage_percentage = coverage_json.dig("coverage") || "Não disponível"
+    comment = "✅ Cobertura de código: #{coverage_percentage}%"
+    
+   
+    
+    if BITRISE_REPO_NAME.nil?
+      UI.user_error!("O parâmetro BITRISE_REPO_NAME é obrigatório")
+    end
+    
+    if BITRISE_PR_NUMBER.nil?
+      UI.user_error!("O parâmetro BITRISE_PR_NUMBER é obrigatório")
+    end
+    
+    if GIT_TOKEN.nil?
+      UI.user_error!("O parâmetro GIT_TOKEN é obrigatório")
+    end
+
+    comment_on_pull_request(
+      github_token: GIT_TOKEN,
+      repo: BITRISE_REPO_NAME,
+      pr_number: BITRISE_PR_NUMBER,
+      comment: comment
     )
   end
 end
-
-
