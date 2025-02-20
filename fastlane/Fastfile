@@ -50,8 +50,16 @@ platform :ios do
     coverage_percentage = coverage_json.dig("coverage") || "Não disponível"
     comment = "✅ Cobertura de código: #{coverage_percentage}%"
     
-    if [GIT_TOKEN, BITRISE_REPO_NAME, BITRISE_PR_NUMBER].any?(&:nil?)
-      UI.user_error!("Todos os parâmetros (GIT_TOKEN, BITRISE_REPO_NAME, BITRISE_PR_NUMBER) são obrigatórios")
+    if GIT_TOKEN.nil?
+      UI.user_error!("O parâmetro GIT_TOKEN é obrigatório")
+    end
+    
+    if BITRISE_REPO_NAME.nil?
+      UI.user_error!("O parâmetro BITRISE_REPO_NAME é obrigatório")
+    end
+    
+    if BITRISE_PR_NUMBER.nil?
+      UI.user_error!("O parâmetro BITRISE_PR_NUMBER é obrigatório")
     end
     
     comment_on_pull_request(
